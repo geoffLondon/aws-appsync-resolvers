@@ -1,10 +1,5 @@
 # AppSync GraphQL Resolvers w/ Go in AWS Lambda
 
-[![Current Release](https://badgen.now.sh/github/release/sbstjn/appsync-resolvers)](https://github.com/sbstjn/appsync-resolvers/releases)
-[![MIT License](https://badgen.now.sh/badge/License/MIT/blue)](https://github.com/sbstjn/appsync-resolvers/blob/master/LICENSE.md)
-[![Read Tutorial](https://badgen.now.sh/badge/Read/Tutorial/orange)](https://sbstjn.com/serverless-graphql-with-appsync-and-lambda.html)
-[![Code Example](https://badgen.now.sh/badge/Code/Example/cyan)](https://github.com/sbstjn/appsync-resolvers-example)
-
 Easily create AWS AppSync resolvers with AWS Lambda using Go. See [appsync-resolvers-example] for an example project with custon `Field` and `Query` resolvers and how to set up, maintain, and deploy a working GraphQL API using the [Serverless Application Model] and without any third-party frameworks.
 
 See [Serverless GraphQL with AWS AppSync and Lambda](https://sbstjn.com/serverless-graphql-with-appsync-and-lambda.html) on [sbstjn.com](https://sbstjn.com) for a detailed guide how to set up and configure this project. Or just run `make configure build package deploy` and you are ready to go …
