@@ -2,29 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ed2c9e7-4aab-4734-b504-eabcf6e08fa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.codeclimate.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws-appsync-resolvers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gopkg.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/invocation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/invocation_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_suite_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payload.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payload_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resolver.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resolver_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validate.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validate_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/cdk-notes-api.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/vcs.xml" afterDir="false" />
@@ -76,6 +53,7 @@
       <change afterPath="$PROJECT_DIR$/../cdk-notes-api/uuid/uuid.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../github.com/resilientplc/fraud-number-lookup-service/lambda/protect_save_whitelist/wire.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../github.com/resilientplc/fraud-number-lookup-service/whitelist/protect_save_whitelist/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +62,7 @@
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
