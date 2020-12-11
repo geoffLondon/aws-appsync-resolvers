@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ed2c9e7-4aab-4734-b504-eabcf6e08fa2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.codeclimate.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws-appsync-resolvers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gopkg.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invocation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invocation_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_suite_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payload.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payload_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resolver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resolver_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validate_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/cdk-notes-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/.task/checksum/wire" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/Taskfile.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/aws/dynamodb/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/aws/dynamodb/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/aws/dynamodb/init_table.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/aws/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/bin/lambda/appsync" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/configuration/configuration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/lambda/appsync/container.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/lambda/appsync/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/lambda/appsync/wire.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/lambda/appsync/wire_gen.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/notes-service/repository/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/notes-service/repository/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/resolver/service/create_note_resolver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/resolver/service/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/resolver/service/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/schema.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/cdk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/cmd/stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/conf/development.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/conf/static.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/api/app-sync.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/api/dynamodb-services-table.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/api/iam-role-app-sync.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/api/iam-role-stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/api/lambda-data-source.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/api/parameter-store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/lib/stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/test/stack.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/utils/resource-name.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/stack/utils/resource-name.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cdk-notes-api/uuid/uuid.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../github.com/resilientplc/fraud-number-lookup-service/lambda/protect_save_whitelist/wire.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../github.com/resilientplc/fraud-number-lookup-service/whitelist/protect_save_whitelist/handler.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1lW91NaSqnZs146sS5ITkFbBjMP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
