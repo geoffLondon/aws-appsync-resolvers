@@ -17,17 +17,17 @@ var _ = Describe("Resolver", func() {
 			Expect(err.Error()).To(Equal(message))
 		},
 
-		Entry("Not a function, but boolean", true, "resolver is not a function, got bool"),
-		Entry("Not a function, but integer", 1234, "resolver is not a function, got int"),
-		Entry("Not a function, but string", "123", "resolver is not a function, got string"),
+		Entry("Not a function, but boolean", true, "Resolver is not a function, got bool"),
+		Entry("Not a function, but integer", 1234, "Resolver is not a function, got int"),
+		Entry("Not a function, but string", "123", "Resolver is not a function, got string"),
 
-		Entry("Parameter is string", func(args string) (interface{}, error) { return nil, nil }, "resolver argument must be struct"),
-		Entry("Too many parameters", func(args struct{}, foo struct{}, foo2 struct{}) (interface{}, error) { return nil, nil }, "resolver must not have more than two arguments, got 3"),
+		Entry("Parameter is string", func(args string) (interface{}, error) { return nil, nil }, "Resolver argument must be struct"),
+		Entry("Too many parameters", func(args struct{}, foo struct{}, bar struct{}) (interface{}, error) { return nil, nil }, "Resolver must not have more than 2 arguments, got 3"),
 
-		Entry("No return value", func() {}, "resolver must have at least one return value"),
-		Entry("Non-error return value", func(args struct{}) interface{} { return nil }, "last return value must be an error"),
-		Entry("Multiple non-error return values", func(args struct{}) (interface{}, interface{}) { return nil, nil }, "last return value must be an error"),
-		Entry("Too many return values", func(args struct{}) (interface{}, error, error) { return nil, nil, nil }, "resolver must not have more than two return values, got 3"),
+		Entry("No return value", func() {}, "Resolver must have at least one return value"),
+		Entry("Non-error return value", func(args struct{}) interface{} { return nil }, "Last return value must be an error"),
+		Entry("Multiple non-error return values", func(args struct{}) (interface{}, interface{}) { return nil, nil }, "Last return value must be an error"),
+		Entry("Too many return values", func(args struct{}) (interface{}, error, error) { return nil, nil, nil }, "Resolver must not have more than two return values, got 3"),
 	)
 
 	DescribeTable("Valid function",

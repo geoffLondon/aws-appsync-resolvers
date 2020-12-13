@@ -1,6 +1,7 @@
 package resolvers
 
 import (
+	awsContext "context"
 	"fmt"
 	"reflect"
 )
@@ -20,12 +21,12 @@ func (r Repository) Add(resolve string, handler interface{}) error {
 }
 
 // Handle responds to the AppSync request
-func (r Repository) Handle(in invocation) (interface{}, error) {
+func (r Repository) Handle(ctx awsContext.Context, in invocation) (interface{}, error) {
 	handler, found := r[in.Resolve]
 
 	if found {
-		return handler.call(in.payload())
+		return handler.call(ctx, in.payload())
 	}
 
-	return nil, fmt.Errorf("no resolver found: %s", in.Resolve)
+	return nil, fmt.Errorf("No resolver found: %s", in.Resolve)
 }

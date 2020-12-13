@@ -10,8 +10,8 @@ import (
 var _ = Describe("Invocation", func() {
 	Context("With Arguments", func() {
 		data := invocation{
-			Resolve: "exaple.resolver",
-			Context: context{
+			Resolve: "example.resolver",
+			Context: invokeContext{
 				Arguments: json.RawMessage(`{ "foo": "bar" }`),
 			},
 		}
@@ -28,7 +28,7 @@ var _ = Describe("Invocation", func() {
 	Context("With Source", func() {
 		data := invocation{
 			Resolve: "exaple.resolver",
-			Context: context{
+			Context: invokeContext{
 				Source: json.RawMessage(`{ "bar": "foo" }`),
 			},
 		}

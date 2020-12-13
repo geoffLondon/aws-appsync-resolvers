@@ -1,29 +1,33 @@
 package resolvers
 
 import (
+	"context"
 	"encoding/json"
 	"reflect"
 )
 
 type resolver struct {
+	// TODO: Enforce by type instead of reflection with indexes
 	function interface{}
 }
 
 func (r *resolver) hasArguments() bool {
-	return reflect.TypeOf(r.function).NumIn() == 1
+	return reflect.TypeOf(r.function).NumIn() > 0
 }
 
-func (r *resolver) call(p json.RawMessage) (interface{}, error) {
+func (r *resolver) call(ctx context.Context, p json.RawMessage) (interface{}, error) {
 	var args []reflect.Value
 	var err error
 
 	if r.hasArguments() {
 		pld := payload{p}
-		args, err = pld.parse(reflect.TypeOf(r.function).In(0))
 
+		args, err = pld.parse(reflect.TypeOf(r.function).In(1))
 		if err != nil {
 			return nil, err
 		}
+
+		args = append([]reflect.Value{reflect.ValueOf(ctx)}, args...)
 	}
 
 	returnValues := reflect.ValueOf(r.function).Call(args)

@@ -1,9 +1,9 @@
 package resolvers
 
 import (
+	awsContext "context"
 	"encoding/json"
 	"errors"
-
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
@@ -15,14 +15,20 @@ var _ = Describe("Repository", func() {
 	type response struct {
 		Foo string
 	}
+
 	r := New()
-	r.Add("example.resolver", func(arg arguments) (response, error) { return response{"bar"}, nil })
-	r.Add("example.resolver.with.error", func(arg arguments) (response, error) { return response{"bar"}, errors.New("Has Error") })
+	resolver := func(ctx awsContext.Context, arg arguments) (response, error) { return response{"bar"}, nil }
+	resolverWithError := func(ctx awsContext.Context, arg arguments) (response, error) {
+		return response{"bar"}, errors.New("Has Error")
+	}
+
+	_ = r.Add("example.resolver", resolver)
+	_ = r.Add("example.resolver.with.error", resolverWithError)
 
 	Context("Matching invocation", func() {
-		res, err := r.Handle(invocation{
+		res, err := r.Handle(awsContext.TODO(), invocation{
 			Resolve: "example.resolver",
-			Context: context{
+			Context: invokeContext{
 				Arguments: json.RawMessage(`{"bar":"foo"}`),
 			},
 		})
@@ -37,9 +43,9 @@ var _ = Describe("Repository", func() {
 	})
 
 	Context("Matching invocation with error", func() {
-		_, err := r.Handle(invocation{
+		_, err := r.Handle(awsContext.TODO(), invocation{
 			Resolve: "example.resolver.with.error",
-			Context: context{
+			Context: invokeContext{
 				Arguments: json.RawMessage(`{"bar":"foo"}`),
 			},
 		})
@@ -50,9 +56,9 @@ var _ = Describe("Repository", func() {
 	})
 
 	Context("Matching invocation with invalid payload", func() {
-		_, err := r.Handle(invocation{
+		_, err := r.Handle(awsContext.TODO(), invocation{
 			Resolve: "example.resolver.with.error",
-			Context: context{
+			Context: invokeContext{
 				Arguments: json.RawMessage(`{"bar:foo"}`),
 			},
 		})
@@ -63,9 +69,9 @@ var _ = Describe("Repository", func() {
 	})
 
 	Context("Not matching invocation", func() {
-		res, err := r.Handle(invocation{
+		res, err := r.Handle(awsContext.TODO(), invocation{
 			Resolve: "example.resolver.not.found",
-			Context: context{
+			Context: invokeContext{
 				Arguments: json.RawMessage(`{"bar":"foo"}`),
 			},
 		})
