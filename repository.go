@@ -25,6 +25,7 @@ func (r Repository) Handle(ctx awsContext.Context, in invocation) (interface{}, 
 	handler, found := r[in.Resolve]
 
 	if found {
+		fmt.Println("Payload", in.payload())
 		return handler.call(ctx, in.payload())
 	}
 
