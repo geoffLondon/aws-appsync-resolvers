@@ -212,13 +212,13 @@
       <change beforePath="$PROJECT_DIR$/../awesomeProject/stack/tsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject/stack/utils/resource-name.spec.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../awesomeProject/stack/utils/resource-name.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payload.go" beforeDir="false" afterPath="$PROJECT_DIR$/payload.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdk-notes-api/.idea/cdk-notes-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/cdk-notes-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdk-notes-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cdk-notes-api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdk-notes-api/aws/dynamodb/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../cdk-notes-api/aws/dynamodb/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdk-notes-api/aws/dynamodb/init_table.go" beforeDir="false" afterPath="$PROJECT_DIR$/../cdk-notes-api/aws/dynamodb/init_table.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cdk-notes-api/bin/lambda/appsync" beforeDir="false" afterPath="$PROJECT_DIR$/../cdk-notes-api/bin/lambda/appsync" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cdk-notes-api/bin/lambda/appsync" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdk-notes-api/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../cdk-notes-api/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdk-notes-api/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../cdk-notes-api/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cdk-notes-api/lambda/appsync/container.go" beforeDir="false" afterPath="$PROJECT_DIR$/../cdk-notes-api/lambda/appsync/container.go" afterDir="false" />
@@ -321,6 +321,7 @@
     <MESSAGE value="test commit." />
     <MESSAGE value="fixed failing unit tests." />
     <MESSAGE value="Updated project, inline with current repo." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated project, inline with current repo." />
+    <MESSAGE value="Added logging to check initial payload." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added logging to check initial payload." />
   </component>
 </project>
